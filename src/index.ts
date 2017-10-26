@@ -84,6 +84,7 @@ export = <T extends ArrayLike<any>>(
   }
   function go_left_bottom() {
     kind = Kind.GoLeftBottom;
+    // tslint:disable-next-line:ban-comma-operator
     index = locator.move(index, pos => (pos.line++, pos.column--));
   }
   function go_bottom() {
@@ -92,6 +93,7 @@ export = <T extends ArrayLike<any>>(
   }
   function go_top_right() {
     kind = Kind.GoTopRight;
+    // tslint:disable-next-line:ban-comma-operator
     index = locator.move(index, pos => (pos.line--, pos.column++));
   }
 };
